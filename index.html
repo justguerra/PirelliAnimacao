@@ -12,11 +12,27 @@
 <meta property="og:profile:first_name" content="Rodrigo" />
 <meta property="og:profile:last_name" content="Guerra" />
 <meta property="og:profile:username" content="GuerraxD" />
-
+<style type="text/css">
+  body{
+    background: #000;
+    font-family:'Open Sans', 'lucida grande', 'Segoe UI', arial, verdana, 'lucida sans unicode', tahoma, sans-serif;
+  }
+  h1,h2, a{
+    color: #FFF;
+    text-align: center;
+  }
+  ul li{
+    display: inline-block;
+    margin:10px;
+    padding:10px;
+    border-radius: 5px;
+    background: rgb(140, 27, 27);
+  }
+</style>
 </head>
 <body>
   <h1>Animações Pirelli</h1>
-
+  <h2 id="h2">2R_2HR 160x600</h2>
   <div id="flash">
     <object style="margin:0 auto; width:160px; display:block;"  width="160" height="600" data="2R_2HR/160x600.swf"></object>
   </div>
@@ -41,6 +57,7 @@
 
   <script type="text/javascript">
     function changeFlash(pasta, w, h) {
+      var h2 = document.getElementById('h2');
       var raiz = document.getElementById('flash');
       var elem = document.createElement('object');
       elem.setAttribute("width",w);
@@ -50,6 +67,7 @@
       elem.setAttribute("height",h);
       elem.setAttribute("data",pasta+"/"+w+"x"+h+".swf");
       raiz.innerHTML = '';
+      h2.innerHTML = pasta + " " + w +"x"+ h;
       raiz.appendChild(elem);
 }
 </script>
