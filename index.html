@@ -3,6 +3,16 @@
 <head>
   <title>Animações Pirelli</title>
   <meta charset="utf-8">
+  <meta property="og:title" content="Pirelli Animation" />
+<meta property="og:type" content="article" />
+<meta charset="og:description " content="Animações e propagandas feitas em Adobe Animate(former Adobe Flash) para diversos produtos da Pirelli.">
+<meta property="og:url" content="http://justguerra.github.io/PirelliAnimacao" />
+<meta property="og:image" content="http://justguerra.github.io/PirelliAnimacao/og_image.jpg" />
+<meta property="og:author" content="Rodrigo Guerra" />
+<meta property="og:profile:first_name" content="Rodrigo" />
+<meta property="og:profile:last_name" content="Guerra" />
+<meta property="og:profile:username" content="GuerraxD" />
+
 </head>
 <body>
   <h1>Animações Pirelli</h1>
@@ -26,32 +36,22 @@
     <li><a href="#" onclick="changeFlash('Scorpion_Trail_II','336', '280')">Scorpion Trail II 336x280</a></li>
     <li><a href="#" onclick="changeFlash('Scorpion_Trail_II','728', '92')">Scorpion Trail II 728x90 - v1</a></li>
     <li><a href="#" onclick="changeFlash('Scorpion_Trail_II','728', '90')">Scorpion Trail II 728x90 - v2</a></li>
-
+    <li><a href="#" onclick="changeFlash('Super_City','336', '280')">Super City 336x280</a></li>
   </ul>
 
-
-
   <script type="text/javascript">
-
     function changeFlash(pasta, w, h) {
       var raiz = document.getElementById('flash');
-
       var elem = document.createElement('object');
       elem.setAttribute("width",w);
       elem.style.width =w+"px";
       elem.style.display = "block";
-
       elem.style.margin ="0 auto";
-
       elem.setAttribute("height",h);
       elem.setAttribute("data",pasta+"/"+w+"x"+h+".swf");
       raiz.innerHTML = '';
       raiz.appendChild(elem);
-  // var elem = ' <object id="flash" width="'+w+'" height="'+h+'" data="'+pasta+'/'+w+'x'+h+'.swf"></object>'
 }
-
 </script>
-
-
 </body>
 </html>
