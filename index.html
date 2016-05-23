@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Animaçnoes Pirelli</title>
+  <meta charset="utf-8">
+</head>
+<body>
+  <h1>Animações Pirelli</h1>
+
+  <div id="flash">
+    <object style="margin:0 auto; width:160px; display:block;"  width="160" height="600" data="2R_2HR/160x600.swf"></object>
+  </div>
+
+  <ul>
+    <li><a href="#" onclick="changeFlash('Angel_GT','160', '600')">Angel GT 160x600</a></li>
+    <li><a href="#" onclick="changeFlash('Angel_GT','336', '280')">Angel GT 336x280</a></li>
+    <li><a href="#" onclick="changeFlash('Angel_GT','728', '90')">Angel GT 728x90</a></li>
+    <li><a href="#" onclick="changeFlash('2R_2HR','160', '600')">2R 2HR 160x600</a></li>
+    <li><a href="#" onclick="changeFlash('2R_2HR','336', '280')">2R 2HR 336x280</a></li>
+    <li><a href="#" onclick="changeFlash('2R_2HR','728', '90')">2R 2HR 728x90</a></li>
+    <li><a href="#" onclick="changeFlash('ME_888','160', '600')">ME 888 160x600</a></li>
+    <li><a href="#" onclick="changeFlash('ME_888','336', '280')">ME 888 336x280</a></li>
+    <li><a href="#" onclick="changeFlash('ME_888','728', '90')">ME 888 728x90</a></li>
+    <li><a href="#" onclick="changeFlash('Scorpion_Trail_II','160', '600')">Scorpion Trail II 160x600 - v1</a></li>
+    <li><a href="#" onclick="changeFlash('Scorpion_Trail_II','160', '602')">Scorpion Trail II 160x600 - v2</a></li>
+    <li><a href="#" onclick="changeFlash('Scorpion_Trail_II','336', '280')">Scorpion Trail II 336x280</a></li>
+    <li><a href="#" onclick="changeFlash('Scorpion_Trail_II','728', '92')">Scorpion Trail II 728x90 - v1</a></li>
+    <li><a href="#" onclick="changeFlash('Scorpion_Trail_II','728', '90')">Scorpion Trail II 728x90 - v2</a></li>
+
+  </ul>
+
+
+
+  <script type="text/javascript">
+
+    function changeFlash(pasta, w, h) {
+      var raiz = document.getElementById('flash');
+
+      var elem = document.createElement('object');
+      elem.setAttribute("width",w);
+      elem.style.width =w+"px";
+      elem.style.display = "block";
+
+      elem.style.margin ="0 auto";
+
+      elem.setAttribute("height",h);
+      elem.setAttribute("data",pasta+"/"+w+"x"+h+".swf");
+      raiz.innerHTML = '';
+      raiz.appendChild(elem);
+  // var elem = ' <object id="flash" width="'+w+'" height="'+h+'" data="'+pasta+'/'+w+'x'+h+'.swf"></object>'
+}
+
+</script>
+
+
+</body>
+</html>
