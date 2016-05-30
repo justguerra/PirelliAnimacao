@@ -4,31 +4,43 @@
   <title>Animações Pirelli</title>
   <meta charset="utf-8">
   <meta property="og:title" content="Pirelli Animation" />
-<meta property="og:type" content="article" />
-<meta charset="og:description " content="Animações e propagandas feitas em Adobe Animate(former Adobe Flash) para diversos produtos da Pirelli.">
-<meta property="og:url" content="http://justguerra.github.io/PirelliAnimacao" />
-<meta property="og:image" content="http://justguerra.github.io/PirelliAnimacao/og_image.jpg" />
-<meta property="og:author" content="Rodrigo Guerra" />
-<meta property="og:profile:first_name" content="Rodrigo" />
-<meta property="og:profile:last_name" content="Guerra" />
-<meta property="og:profile:username" content="GuerraxD" />
-<style type="text/css">
-  body{
-    background: #000;
-    font-family:'Open Sans', 'lucida grande', 'Segoe UI', arial, verdana, 'lucida sans unicode', tahoma, sans-serif;
-  }
-  h1,h2, a{
-    color: #FFF;
-    text-align: center;
-  }
-  ul li{
-    display: inline-block;
-    margin:10px;
-    padding:10px;
-    border-radius: 5px;
-    background: rgb(140, 27, 27);
-  }
-</style>
+  <meta property="og:type" content="article" />
+  <meta charset="og:description " content="Animações e propagandas feitas em Adobe Animate(former Adobe Flash) para diversos produtos da Pirelli.">
+  <meta property="og:url" content="http://justguerra.github.io/PirelliAnimacao" />
+  <meta property="og:image" content="http://justguerra.github.io/PirelliAnimacao/og_image.jpg" />
+  <meta property="og:author" content="Rodrigo Guerra" />
+  <meta property="og:profile:first_name" content="Rodrigo" />
+  <meta property="og:profile:last_name" content="Guerra" />
+  <meta property="og:profile:username" content="GuerraxD" />
+  <style type="text/css">
+    body{
+      background: #FFF;
+      font-family:'Open Sans', 'lucida grande', 'Segoe UI', arial, verdana, 'lucida sans unicode', tahoma, sans-serif;
+    }
+    h1,h2,h4, a{
+      color: #000;
+      text-align: center;
+    }
+    ul li{
+      display: inline-block;
+      margin:10px;
+      padding:10px;
+      border-radius: 5px;
+      background: rgb(46, 167, 83);
+    }
+
+    img{
+      background: #000;
+      width: 200px;
+      margin: 0 auto; 
+    }
+
+    .sidebar > li{
+      width: 90%;
+      margin: 10 auto; 
+
+    }
+  </style>
 </head>
 <body>
   <h1>Animações Pirelli</h1>
@@ -36,23 +48,63 @@
   <div id="flash">
     <object style="margin:0 auto; width:160px; display:block;"  width="160" height="600" data="2R_2HR/160x600.swf"></object>
   </div>
+  <ul class="sidebar">
+  <li>
+  <h4>Angel GT</h4>
+  <img src="img/angel_gt.png">
+      <ul>
+        <li><a href="#" onclick="changeFlash('Angel_GT','160', '600')">160x600 - v1</a></li>
+        <li><a href="#" onclick="changeFlash('Angel_GT','160', '601')">160x600 - v2</a></li>
+        <li><a href="#" onclick="changeFlash('Angel_GT','336', '280')">336x280 - v1</a></li>
+        <li><a href="#" onclick="changeFlash('Angel_GT','336', '281')">336x280 - v2</a></li>
+        <li><a href="#" onclick="changeFlash('Angel_GT','728', '90')">728x90 - v1</a></li>
+        <li><a href="#" onclick="changeFlash('Angel_GT','728', '91')">728x90 - v2</a></li>
+      </ul>
+    </li>
+    <li>
+    <h4>2R 2HR</h4>
+    <ul>
+  <img src="img/diablo_gt.png">
 
-  <ul>
-    <li><a href="#" onclick="changeFlash('Angel_GT','160', '600')">Angel GT 160x600</a></li>
-    <li><a href="#" onclick="changeFlash('Angel_GT','336', '280')">Angel GT 336x280</a></li>
-    <li><a href="#" onclick="changeFlash('Angel_GT','728', '90')">Angel GT 728x90</a></li>
-    <li><a href="#" onclick="changeFlash('2R_2HR','160', '600')">2R 2HR 160x600</a></li>
-    <li><a href="#" onclick="changeFlash('2R_2HR','336', '280')">2R 2HR 336x280</a></li>
-    <li><a href="#" onclick="changeFlash('2R_2HR','728', '90')">2R 2HR 728x90</a></li>
-    <li><a href="#" onclick="changeFlash('ME_888','160', '600')">ME 888 160x600</a></li>
-    <li><a href="#" onclick="changeFlash('ME_888','336', '280')">ME 888 336x280</a></li>
-    <li><a href="#" onclick="changeFlash('ME_888','728', '90')">ME 888 728x90</a></li>
-    <li><a href="#" onclick="changeFlash('Scorpion_Trail_II','160', '600')">Scorpion Trail II 160x600 - v1</a></li>
-    <li><a href="#" onclick="changeFlash('Scorpion_Trail_II','160', '602')">Scorpion Trail II 160x600 - v2</a></li>
-    <li><a href="#" onclick="changeFlash('Scorpion_Trail_II','336', '280')">Scorpion Trail II 336x280</a></li>
-    <li><a href="#" onclick="changeFlash('Scorpion_Trail_II','728', '92')">Scorpion Trail II 728x90 - v1</a></li>
-    <li><a href="#" onclick="changeFlash('Scorpion_Trail_II','728', '90')">Scorpion Trail II 728x90 - v2</a></li>
-    <li><a href="#" onclick="changeFlash('Super_City','336', '280')">Super City 336x280</a></li>
+      <li><a href="#" onclick="changeFlash('2R_2HR','160', '600')"> 160x600</a></li>
+      <li><a href="#" onclick="changeFlash('2R_2HR','336', '280')"> 336x280</a></li>
+      <li><a href="#" onclick="changeFlash('2R_2HR','728', '90')"> 728x90 - v1</a></li>
+      <li><a href="#" onclick="changeFlash('2R_2HR','728', '91')"> 728x90 - v2</a></li>
+    </ul>
+    </li>
+    <li>
+    <h4>ME 888</h4>
+    <ul>
+    <img src="img/metzeler.png">
+      <li><a href="#" onclick="changeFlash('ME_888','160', '600')">160x600 - v1</a></li>
+      <li><a href="#" onclick="changeFlash('ME_888','160', '601')">160x600 - v2</a></li>
+      <li><a href="#" onclick="changeFlash('ME_888','336', '280')">336x280 - v1</a></li>
+      <li><a href="#" onclick="changeFlash('ME_888','336', '281')">336x280 - v2</a></li>
+      <li><a href="#" onclick="changeFlash('ME_888','728', '90')">728x90 - v1</a></li>
+      <li><a href="#" onclick="changeFlash('ME_888','728', '91')">728x90 - v2</a></li>
+    </ul>
+    </li>
+<li>
+<h4>Scorpion Trail II</h4>
+    <ul>
+    <img src="img/scorpion.png">
+      <li><a href="#" onclick="changeFlash('Scorpion_Trail_II','160', '600')">160x600 - v1</a></li>
+      <li><a href="#" onclick="changeFlash('Scorpion_Trail_II','160', '602')">160x600 - v2</a></li>
+      <li><a href="#" onclick="changeFlash('Scorpion_Trail_II','336', '280')">336x280 - v1</a></li>
+      <li><a href="#" onclick="changeFlash('Scorpion_Trail_II','336', '281')">336x280 - v2</a></li>
+      <li><a href="#" onclick="changeFlash('Scorpion_Trail_II','728', '90')">728x90 - v1</a></li>
+      <li><a href="#" onclick="changeFlash('Scorpion_Trail_II','728', '92')">728x90 - v2</a></li>
+    </ul>
+    </li>
+<li>
+<h4>Super City</h4>
+    <ul>
+    <img src="img/super_city.png">
+      <li><a href="#" onclick="changeFlash('Super_City','160', '600')">160x600</a></li>
+      <li><a href="#" onclick="changeFlash('Super_City','336', '280')">336x280</a></li>
+      <li><a href="#" onclick="changeFlash('Super_City','728', '90')">728x90</a></li>
+    </ul>
+    </li>
   </ul>
 
   <script type="text/javascript">
@@ -69,7 +121,7 @@
       raiz.innerHTML = '';
       h2.innerHTML = pasta + " " + w +"x"+ h;
       raiz.appendChild(elem);
-}
-</script>
+    }
+  </script>
 </body>
 </html>
